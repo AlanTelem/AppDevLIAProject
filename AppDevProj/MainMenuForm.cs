@@ -41,5 +41,10 @@ namespace AppDevProj
             MessageBox.Show("You have no friends!");
 
         }
+
+        private void MainMenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

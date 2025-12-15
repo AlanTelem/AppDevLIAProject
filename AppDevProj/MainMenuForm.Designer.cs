@@ -30,7 +30,6 @@
         {
             this.MainMenuLabel = new System.Windows.Forms.Label();
             this.OverviewButton = new System.Windows.Forms.Button();
-            this.CollectionButton = new System.Windows.Forms.Button();
             this.FriendsButton = new System.Windows.Forms.Button();
             this.TemplateButton = new System.Windows.Forms.Button();
             this.ExitButtonMainMenu = new System.Windows.Forms.Button();
@@ -53,24 +52,14 @@
             this.OverviewButton.Name = "OverviewButton";
             this.OverviewButton.Size = new System.Drawing.Size(195, 27);
             this.OverviewButton.TabIndex = 1;
-            this.OverviewButton.Text = "QUICKVIEW";
+            this.OverviewButton.Text = "COLLECTIONS";
             this.OverviewButton.UseVisualStyleBackColor = true;
             this.OverviewButton.Click += new System.EventHandler(this.OverviewButton_Click);
-            // 
-            // CollectionButton
-            // 
-            this.CollectionButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CollectionButton.Location = new System.Drawing.Point(117, 160);
-            this.CollectionButton.Name = "CollectionButton";
-            this.CollectionButton.Size = new System.Drawing.Size(195, 27);
-            this.CollectionButton.TabIndex = 2;
-            this.CollectionButton.Text = "COLLECTIONS";
-            this.CollectionButton.UseVisualStyleBackColor = true;
             // 
             // FriendsButton
             // 
             this.FriendsButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FriendsButton.Location = new System.Drawing.Point(117, 209);
+            this.FriendsButton.Location = new System.Drawing.Point(117, 157);
             this.FriendsButton.Name = "FriendsButton";
             this.FriendsButton.Size = new System.Drawing.Size(195, 27);
             this.FriendsButton.TabIndex = 3;
@@ -81,7 +70,7 @@
             // TemplateButton
             // 
             this.TemplateButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TemplateButton.Location = new System.Drawing.Point(117, 256);
+            this.TemplateButton.Location = new System.Drawing.Point(117, 204);
             this.TemplateButton.Name = "TemplateButton";
             this.TemplateButton.Size = new System.Drawing.Size(195, 27);
             this.TemplateButton.TabIndex = 4;
@@ -92,7 +81,7 @@
             // ExitButtonMainMenu
             // 
             this.ExitButtonMainMenu.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButtonMainMenu.Location = new System.Drawing.Point(117, 302);
+            this.ExitButtonMainMenu.Location = new System.Drawing.Point(117, 250);
             this.ExitButtonMainMenu.Name = "ExitButtonMainMenu";
             this.ExitButtonMainMenu.Size = new System.Drawing.Size(195, 27);
             this.ExitButtonMainMenu.TabIndex = 5;
@@ -104,15 +93,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 366);
+            this.ClientSize = new System.Drawing.Size(430, 290);
             this.Controls.Add(this.ExitButtonMainMenu);
             this.Controls.Add(this.TemplateButton);
             this.Controls.Add(this.FriendsButton);
-            this.Controls.Add(this.CollectionButton);
             this.Controls.Add(this.OverviewButton);
             this.Controls.Add(this.MainMenuLabel);
+            this.MaximumSize = new System.Drawing.Size(446, 329);
+            this.MinimumSize = new System.Drawing.Size(446, 329);
             this.Name = "MainMenuForm";
             this.Text = "MainMenuForm";
+            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,7 +113,6 @@
 
         private System.Windows.Forms.Label MainMenuLabel;
         private System.Windows.Forms.Button OverviewButton;
-        private System.Windows.Forms.Button CollectionButton;
         private System.Windows.Forms.Button FriendsButton;
         private System.Windows.Forms.Button TemplateButton;
         private System.Windows.Forms.Button ExitButtonMainMenu;
